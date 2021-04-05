@@ -1,0 +1,80 @@
+.Photo {
+    background-color: #c6e17a;
+    background: linear-gradient(180deg, rgba(198,225,122,1) 0%, rgba(167,194,89,1) 67%, rgba(171,197,93,1) 87%, rgba(187,213,114,1) 100%);
+    display: block;
+    position: relative;
+    height: 300px;
+}
+.Photo-me {
+    width: 150px;
+    position: absolute;
+    top: 1.2rem;
+    right: 15rem;
+    z-index: 1;
+}
+.Stacks {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 100px;
+}
+.loop1 {
+    animation-name: flow1;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+@keyframes flow1 {
+    0%{
+        transform:translateX(100%);
+        -moz-transform:translateX(100%);
+        -webkit-transform:translateX(100%);
+        -o-transform:translateX(100%);
+        -ms-transform:translateX(100%);
+    }
+    100%{
+        transform:translateX(-0%);
+        -moz-transform:translateX(-0%);
+        -webkit-transform:translateX(-0%);
+        -o-transform:translateX(-0%);
+        -ms-transform:translateX(-0%);
+    }
+}
+.loop2 {
+    animation-name: flow2;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+@keyframes flow2 {
+    0%{
+        transform:translateX(0%);
+        -moz-transform:translateX(0%);
+        -webkit-transform:translateX(0%);
+        -o-transform:translateX(0%);
+        -ms-transform:translateX(0%);
+    }
+    100%{
+        transform:translateX(-100%);
+        -moz-transform:translateX(-100%);
+        -webkit-transform:translateX(-100%);
+        -o-transform:translateX(-100%);
+        -ms-transform:translateX(-100%);
+    }
+}
+.Stacks-label {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-right: 5rem;
+}
+.Stacks-image {
+    position: absolute;
+    height: 4rem;
+    top: 50%;
+    margin-top: -2rem;
+    left: 50%;
+    margin-left: -2rem;
+}
