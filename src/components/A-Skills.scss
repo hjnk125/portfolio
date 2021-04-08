@@ -1,0 +1,55 @@
+.Skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .Skills-row {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0.5rem;
+    }
+}
+
+label {
+    margin: 0.3rem;
+    text-align: left;
+    &::before {
+        content: "∙ ";
+    }
+}
+
+.Skills-graph {
+    background-color: rgb(233, 233, 233);
+    width: 10rem;
+    height: 0.8rem;
+    border-radius: 0.5rem;
+    position: relative;
+    margin: 0.4rem;
+
+    span {
+        position: absolute;
+        background-color: #c6e17a;
+        height: 0.8rem;
+        border-radius: 0.5rem;
+        top: 0;
+        left: 0;
+        &:hover {
+            background-color: #bdd870;
+        }
+        &.per-50 {
+            width: 5rem;
+        }
+        &.per-60 {
+            width: 6rem;
+        }
+        &.per-70 {
+            width: 7rem;
+        }
+        &.per-80 {
+            width: 8rem;
+        }
+        &.per-90 {
+            width: 9rem;
+        }
+    }
+}

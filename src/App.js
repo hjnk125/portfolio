@@ -1,12 +1,17 @@
 import './App.css';
 import Nav from './Nav';
-import AboutMe from './AboutMe';
+import AboutMe from './components/AboutMe';
+import Projects from './components/Projects';
+import { Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <Nav />
-      <AboutMe />
+      <Switch>
+        <Route exact path="/" component={AboutMe} />
+        <Route path="/projects" component={Projects} />
+      </Switch>
     </div>
   );
 }
