@@ -1,35 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+h2 {
+    font-family: 'Zeyada', cursive;
+    font-size: 1.8rem;
+}
 h3 {
     border-top: 1px #ccc solid;
-    margin: 1rem 20% 0 20%;
-    padding: 1rem;
+    margin: 2rem 20% 0 20%;
+    padding: 2rem;
     position: relative;
     line-height: 15px;
+    font-family: 'Zeyada', cursive;
+    font-size: 1.5rem;
 }
 .more-btn {
     position: absolute;
     text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
     font-weight: 400;
     color: gray;
     font-size: 13px;
     line-height: 15px;
     margin: 0 1rem;
-}
-
-.Main-Projects{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    .Main-Projects-content{
-        width: 33%;
-        background-color: #c6e17a;
-        border-radius: 0.5rem;
-        position: relative;
-        margin: 1rem;
-        img {
-            width: 90%;
-            margin: 5%;
-            border-radius: 0.6rem;
-        }
-    }
 }

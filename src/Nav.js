@@ -6,6 +6,8 @@ function Nav() {
     <div className="Nav">
       <Link to="/projects" className="Nav-btn">Projects</Link>
       <Link to="/" className="Nav-btn">About Me</Link>
+
+      <h4>HOJUNG KIM</h4>
     </div>
   );
 }

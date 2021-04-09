@@ -1,35 +1,15 @@
 import './AboutMe.scss';
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Photo from './A-Photo';
 import Skills from './A-Skills';
-
-import getupmate from '../images/getupmate.gif';
-import donforget from '../images/donforget.gif';
-import doremi from '../images/doremi.gif';
-import { useState } from 'react';
+import MainProjects from './A-Projects';
 
 function AboutMe() {
-  const [mainProjects] = useState([
-    {
-      title: "getupmate",
-      img: getupmate,
-      github: "https://github.com/codestates/getupmate-client"
-    },
-    {
-      title: "don-forget",
-      img: donforget,
-      github: "https://github.com/codestates/don-forget-client"
-    },
-    {
-      title: "doremi",
-      img: doremi,
-      github: "https://github.com/hjnk125/doremi"
-    }
-  ])
 
   return (
     <div className="AboutMe">
+
       <Photo />
 
       <h2>HOJUNG KIM</h2>
@@ -39,17 +19,8 @@ function AboutMe() {
       <Skills />
 
       <h3>PROJECTS<Link to="/projects" className="more-btn">more ‣</Link></h3>
-      <div className="Main-Projects">
-        {mainProjects.map((project) => {
-          return (
-            <div className="Main-Projects-content">
-              <img src={project.img} alt={project.title} />
-              <div>{project.title}</div>
-              <button onClick={() => window.open(project.github)}>GitHub ‣</button>
-            </div>
-          )
-        })}
-      </div>
+      <MainProjects />
+
     </div>
   );
 }

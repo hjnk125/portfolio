@@ -11,7 +11,7 @@ function Skills() {
           </div>
         </label>
         <label>
-          JavaScript ES6
+          ES6
         <div className="Skills-graph">
             <span className="per-80"></span>
           </div>

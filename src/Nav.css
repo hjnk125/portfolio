@@ -10,3 +10,9 @@
     text-decoration: none;
     color: rgb(30,30,30);
 }
+
+h4 {
+    margin: 0;
+    margin-right: auto;
+    margin-left: 1rem;
+}
