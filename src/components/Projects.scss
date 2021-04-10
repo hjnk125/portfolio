@@ -10,10 +10,24 @@
 
     .Project-title {
         font-size: 1.6rem;
-        line-height: 2.5rem;
+        margin: 1rem 0 0.5rem 0;
+
+        i {
+            font-size: 0.9rem;
+            margin-left: 0.5rem;
+            &::before {
+                content: "- ";
+            }
+        }
     }
 
     .Project-link {
+        .Project-link-label {
+            background-color: #000;
+            color: #fff;
+            padding: 0 0.2rem;
+        }
+
         a {
             color: #000;
         }
